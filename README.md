@@ -1,5 +1,7 @@
 # Fabric Mod Check
 
+[Live Cloud Run service](https://fabric-mod-check-wsmvshdila-uc.a.run.app)
+
 Fabric Mod Check helps Minecraft players and modpack maintainers investigate declared version conflicts before installing a pack. It covers **Minecraft Java 1.21.1 on Fabric** and four client mods: **Sodium, Iris, Indium and Continuity**.
 
 **Research question:** Which exact version constraints prevent a selected mod list from being installed together, and which changes resolve the conflicts documented in the captured records?
@@ -108,4 +110,4 @@ It dispatched zero research tasks.
 3. Use a runtime service account with Vertex AI access and set `GOOGLE_CLOUD_PROJECT` to the course project. Set the Cloud Run request timeout to 300 seconds. A maximum of one instance is sufficient for grading and keeps follow-up chats on the same SQLite instance until it restarts. Make the service reachable to graders per the course instructions.
 4. Open the deployed page, run all three example buttons and check their sources and tool traces. Put the verified service URL in `submission.json`'s `deploy_url`. Submit the **GitHub repository URL** in Canvas and keep the service running until grades are released.
 
-The supplied `submission.json` already has the solo author's UNI and `research` path. Its deployment URL is filled in after deployment.
+The supplied `submission.json` already has the solo author's UNI and `research` path. Its deployment URL is the verified public Cloud Run service.
