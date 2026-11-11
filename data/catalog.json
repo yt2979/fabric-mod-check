@@ -1,0 +1,697 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "fabric",
+  "retrieved_at": "2026-11-11T17:08:51+00:00",
+  "projects": {
+    "sodium": {
+      "name": "Sodium",
+      "id": "AANobbMI",
+      "api_url": "https://api.modrinth.com/v2/project/sodium/version?loaders=%5B%22fabric%22%5D&game_versions=%5B%221.21.1%22%5D",
+      "versions": [
+        {
+          "id": "SMxNOGZ6",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.13-fabric",
+          "version_type": "release",
+          "date_published": "2026-08-28T20:55:02.424329Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "QV48eyCs",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.13-beta.2-fabric",
+          "version_type": "beta",
+          "date_published": "2026-08-07T00:56:44.021284Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "lYTPBqRz",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.13-beta.1-fabric",
+          "version_type": "beta",
+          "date_published": "2026-07-30T00:45:19.119700Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "KIRFiWG4",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-fabric",
+          "version_type": "release",
+          "date_published": "2026-07-06T17:19:52.471697Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "JjCVwmVA",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-beta.2-fabric",
+          "version_type": "beta",
+          "date_published": "2026-06-24T15:49:56.664749Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "s7adptIg",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-beta.1-fabric",
+          "version_type": "beta",
+          "date_published": "2026-06-13T13:24:54.858140Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "uheoPKxU",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-alpha.4-fabric",
+          "version_type": "alpha",
+          "date_published": "2026-05-25T13:19:01.423143Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "8kVO74iE",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-alpha.3-fabric",
+          "version_type": "alpha",
+          "date_published": "2026-05-13T23:41:04.808660Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "Gv1UmlKg",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-alpha.2-fabric",
+          "version_type": "alpha",
+          "date_published": "2026-05-13T23:29:44.435940Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "Uif0LEOw",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.8.12-alpha.1-fabric",
+          "version_type": "alpha",
+          "date_published": "2026-05-13T18:15:41.832455Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "u1OEbNKx",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.13-fabric",
+          "version_type": "release",
+          "date_published": "2025-04-04T00:07:37.476142Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "26nVNc41",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.9-fabric",
+          "version_type": "release",
+          "date_published": "2025-02-19T22:34:49.381915Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "AxSdcDcP",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.7-fabric",
+          "version_type": "release",
+          "date_published": "2025-02-09T04:18:26.205923Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "EoNKHoLH",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.5-fabric",
+          "version_type": "release",
+          "date_published": "2024-12-17T22:10:57.615075Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "Hd6ChVqe",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.3-fabric",
+          "version_type": "release",
+          "date_published": "2024-12-07T06:56:22.310766Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "6b5IXmYv",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.2-fabric",
+          "version_type": "release",
+          "date_published": "2024-12-03T21:19:24.631677Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "r9o9ggVu",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.1-fabric",
+          "version_type": "release",
+          "date_published": "2024-12-02T20:43:53.732416Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "b70slbHV",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.0-fabric",
+          "version_type": "release",
+          "date_published": "2024-11-17T01:42:01.649657Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "zJZY6GYO",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21.1-0.6.0-beta.4-fabric",
+          "version_type": "beta",
+          "date_published": "2024-10-27T23:13:36.382235Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "CcIWi5Av",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21-0.6.0-beta.2-fabric",
+          "version_type": "beta",
+          "date_published": "2024-09-15T18:02:43.377384Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "oZOSEhyy",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21-0.6.0-beta.1-fabric",
+          "version_type": "beta",
+          "date_published": "2024-08-22T23:04:32.062618Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "RncWhTxD",
+          "project_id": "AANobbMI",
+          "version_number": "mc1.21-0.5.11",
+          "version_type": "release",
+          "date_published": "2024-06-29T13:45:49.041594Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": []
+        }
+      ]
+    },
+    "iris": {
+      "name": "Iris",
+      "id": "YL57xq9U",
+      "api_url": "https://api.modrinth.com/v2/project/iris/version?loaders=%5B%22fabric%22%5D&game_versions=%5B%221.21.1%22%5D",
+      "versions": [
+        {
+          "id": "bAo1Qhte",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.14-beta.1+1.21.1-fabric",
+          "version_type": "release",
+          "date_published": "2026-06-13T15:56:42.633700Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": [
+            {
+              "version_id": "SMxNOGZ6",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "zsoi0dso",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.8+1.21.1-fabric",
+          "version_type": "release",
+          "date_published": "2025-02-20T15:04:02.182924Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": null,
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "A99vfwJc",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.7+1.21.1-fabric",
+          "version_type": "release",
+          "date_published": "2025-02-20T02:12:38.262442Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric"
+          ],
+          "dependencies": [
+            {
+              "version_id": "26nVNc41",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "IzngD3Cy",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.1+1.21.1-fabric",
+          "version_type": "release",
+          "date_published": "2024-12-02T23:16:42.985387Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "r9o9ggVu",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "MA2sKKaG",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0+1.21.1-fabric",
+          "version_type": "release",
+          "date_published": "2024-11-17T05:55:36.290304Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "b70slbHV",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "NqWJ1KIA",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.8+1.21.1-fabric",
+          "version_type": "beta",
+          "date_published": "2024-11-08T02:28:55.466328Z",
+          "game_versions": [
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "zJZY6GYO",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "RyzH5mIp",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.7+1.21.1-fabric",
+          "version_type": "beta",
+          "date_published": "2024-11-03T23:52:47.563975Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "zJZY6GYO",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "u9KvDA4s",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.4+1.21-fabric",
+          "version_type": "beta",
+          "date_published": "2024-09-15T18:48:23.136139Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "CcIWi5Av",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "Kdz76qQt",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.3+1.21-fabric",
+          "version_type": "beta",
+          "date_published": "2024-08-25T22:31:23.296002Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "di7sM681",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.2+1.21-fabric",
+          "version_type": "beta",
+          "date_published": "2024-08-23T02:20:26.666149Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": []
+        },
+        {
+          "id": "81XVWegK",
+          "project_id": "YL57xq9U",
+          "version_number": "1.8.0-beta.1+1.21-fabric",
+          "version_type": "beta",
+          "date_published": "2024-08-22T23:11:54.656243Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "oZOSEhyy",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "kuOV4Ece",
+          "project_id": "YL57xq9U",
+          "version_number": "1.7.3+1.21",
+          "version_type": "release",
+          "date_published": "2024-07-01T00:12:05.988508Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": null,
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        }
+      ]
+    },
+    "indium": {
+      "name": "Indium",
+      "id": "Orvt0mRa",
+      "api_url": "https://api.modrinth.com/v2/project/indium/version?loaders=%5B%22fabric%22%5D&game_versions=%5B%221.21.1%22%5D",
+      "versions": [
+        {
+          "id": "Z8VpxxGh",
+          "project_id": "Orvt0mRa",
+          "version_number": "1.0.35+mc1.21",
+          "version_type": "release",
+          "date_published": "2024-08-15T17:24:32.161310Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": "RncWhTxD",
+              "project_id": "AANobbMI",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        }
+      ]
+    },
+    "continuity": {
+      "name": "Continuity",
+      "id": "1IjD5062",
+      "api_url": "https://api.modrinth.com/v2/project/continuity/version?loaders=%5B%22fabric%22%5D&game_versions=%5B%221.21.1%22%5D",
+      "versions": [
+        {
+          "id": "kSPJ4hQv",
+          "project_id": "1IjD5062",
+          "version_number": "3.0.0+1.21",
+          "version_type": "release",
+          "date_published": "2024-12-04T18:28:12.999814Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": null,
+              "project_id": "P7dR8mSH",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        },
+        {
+          "id": "NksUpFjf",
+          "project_id": "1IjD5062",
+          "version_number": "3.0.0-beta.5+1.21",
+          "version_type": "release",
+          "date_published": "2024-06-13T23:53:12.936736Z",
+          "game_versions": [
+            "1.21",
+            "1.21.1"
+          ],
+          "loaders": [
+            "fabric",
+            "quilt"
+          ],
+          "dependencies": [
+            {
+              "version_id": null,
+              "project_id": "P7dR8mSH",
+              "file_name": null,
+              "dependency_type": "required"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "notes": [
+    {
+      "id": "N-INDIUM",
+      "mod": "indium",
+      "title": "Indium maintainer compatibility notice",
+      "url": "https://modrinth.com/project/indium",
+      "text": "The maintainer says Sodium 0.6 and later include Fabric Rendering API support. Indium is unnecessary for that purpose and is incompatible with Sodium 0.6 and later."
+    },
+    {
+      "id": "N-SODIUM",
+      "mod": "sodium",
+      "title": "Sodium 0.6 Fabric Rendering API announcement",
+      "url": "https://modrinth.com/mod/sodium/version/oZOSEhyy",
+      "text": "The Sodium 0.6 release notes describe Fabric Rendering API support built into Sodium, replacing the need for Indium to provide that support."
+    }
+  ]
+}

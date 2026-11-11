@@ -1,0 +1,23 @@
+[
+  {
+    "id": "conflict",
+    "title": "Compare conflicting pins",
+    "question": "On Minecraft 1.21.1 Fabric, can Iris 1.8.14 Beta 1 and Indium 1.0.35 share one Sodium version? Give both exact pins.",
+    "expected": "No single Sodium release satisfies both recorded pins. Iris 1.8.14 Beta 1 requires Sodium 0.8.13 (SMxNOGZ6). Indium 1.0.35 requires Sodium 0.5.11 (RncWhTxD).",
+    "location": "data/catalog.json → projects.iris.versions[bAo1Qhte].dependencies; projects.indium.versions[Z8VpxxGh].dependencies"
+  },
+  {
+    "id": "repair",
+    "title": "Keep Iris, fix the pack",
+    "question": "On Minecraft 1.21.1 Fabric, keep Iris 1.8.14 Beta 1. My other mods are Sodium 0.5.11 and Indium 1.0.35. What is the smallest change set that resolves the documented conflicts?",
+    "expected": "Keeping Iris fixed, replace Sodium 0.5.11 with 0.8.13 and remove Indium 1.0.35. Iris needs the newer pin; the Indium maintainer documents incompatibility with Sodium 0.6 and later, which incorporates the rendering API support. The result satisfies captured constraints, with launch testing out of scope.",
+    "location": "data/catalog.json → projects.iris.versions[bAo1Qhte]; projects.sodium.versions[SMxNOGZ6]; notes[N-INDIUM], notes[N-SODIUM]"
+  },
+  {
+    "id": "external",
+    "title": "Check Continuity",
+    "question": "For Minecraft 1.21.1 Fabric, does Continuity 3.0.0+1.21 require Fabric API, and can this snapshot tell me the exact Fabric API version to install?",
+    "expected": "Yes, Continuity declares Fabric API (project P7dR8mSH) as required. The version_id is null. The four-mod snapshot cannot name an exact Fabric API release.",
+    "location": "data/catalog.json → projects.continuity.versions[kSPJ4hQv].dependencies"
+  }
+]

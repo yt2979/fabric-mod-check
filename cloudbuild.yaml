@@ -1,0 +1,41 @@
+substitutions:
+  _REGION: us-central1
+  _SERVICE: fabric-mod-check
+  _ARTIFACT_REPOSITORY: cloud-run-source-deploy
+  _RUNTIME_SERVICE_ACCOUNT: 896481216161-compute@developer.gserviceaccount.com
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 900s
+steps:
+  - id: Build image
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --tag
+      - '${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_SERVICE}:$COMMIT_SHA'
+      - .
+  - id: Push image
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - '${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_SERVICE}:$COMMIT_SHA'
+  - id: Deploy to Cloud Run
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - '${_SERVICE}'
+      - '--project=$PROJECT_ID'
+      - '--region=${_REGION}'
+      - '--image=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_SERVICE}:$COMMIT_SHA'
+      - '--service-account=${_RUNTIME_SERVICE_ACCOUNT}'
+      - '--update-env-vars=GOOGLE_CLOUD_PROJECT=$PROJECT_ID'
+      - '--update-labels=managed-by=cloud-build,commit-sha=$COMMIT_SHA'
+      - --timeout=300
+      - --max-instances=1
+      - --concurrency=4
+      - --memory=512Mi
+      - --cpu=1
+      - --allow-unauthenticated
+      - --quiet

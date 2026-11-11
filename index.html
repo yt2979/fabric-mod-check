@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Investigate declared version conflicts in a Minecraft 1.21.1 Fabric mod pack.">
+  <title>Fabric Mod Check</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/" aria-label="Fabric Mod Check home"><span class="block-mark" aria-hidden="true"></span>Fabric Mod Check</a>
+      <span class="scope">JAVA 1.21.1 <span>·</span> FABRIC</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <div class="intro-copy">
+        <h1 id="title">Check your mod pack<br>before you install.</h1>
+        <p>Trace version conflicts and find documented alternatives for Sodium, Iris, Indium, and Continuity.</p>
+      </div>
+      <div class="intro-pattern" aria-hidden="true"></div>
+    </section>
+
+    <div class="workspace">
+      <section class="panel composer" aria-labelledby="ask-title">
+        <div class="panel-heading">
+          <h2 id="ask-title">Start an investigation</h2>
+          <button id="clear" type="button" class="quiet" disabled>New conversation</button>
+        </div>
+        <p class="hint">Ask about a dependency or pick exact versions to compare.</p>
+        <div class="examples" aria-label="Sample investigations">
+          <button type="button" data-example="conflict">Compare conflicting pins</button>
+          <button type="button" data-example="repair">Keep Iris, fix the pack</button>
+          <button type="button" data-example="external">Check Continuity</button>
+        </div>
+        <form id="query-form">
+          <label for="message">Your question</label>
+          <textarea id="message" name="message" maxlength="1900" rows="4"
+            placeholder="Can these Iris and Indium releases use the same Sodium version?"></textarea>
+          <details id="version-details">
+            <summary>Select versions from the snapshot</summary>
+            <div id="version-fields" class="version-fields"></div>
+          </details>
+          <div class="actions">
+            <button id="submit" class="primary" type="submit">Run investigation <span aria-hidden="true">↗</span></button>
+            <span id="status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+
+      <aside class="panel coverage" aria-labelledby="coverage-title">
+        <h2 id="coverage-title">Data coverage</h2>
+        <p class="hint">Captured Modrinth versions for Minecraft 1.21.1 Fabric.</p>
+        <ul id="scope-list" class="scope-list"><li>Loading version records…</li></ul>
+        <p id="snapshot" class="snapshot"></p>
+        <p class="coverage-note">Reports evaluate declared requirements and maintainer notes. Launch behavior requires an in-game test.</p>
+      </aside>
+    </div>
+
+    <section id="history" class="history" aria-label="Investigation results"></section>
+  </main>
+  <footer class="wrap footer">IEOR 4570 <span>·</span> Project 2 <span>·</span> <a href="https://docs.modrinth.com/api/" rel="noreferrer">Modrinth data</a></footer>
+</body>
+</html>
