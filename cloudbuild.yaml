@@ -37,5 +37,6 @@ steps:
       - --concurrency=4
       - --memory=512Mi
       - --cpu=1
-      - --allow-unauthenticated
+      - --no-allow-unauthenticated
+      - --iap
       - --quiet

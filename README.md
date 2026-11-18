@@ -2,6 +2,8 @@
 
 [Live Cloud Run service](https://fabric-mod-check-wsmvshdila-uc.a.run.app)
 
+Sign in with a `columbia.edu` Google account to use the deployed app. The course's Identity-Aware Proxy (IAP) protects the website and its API; an unsigned request reaches the Google sign-in page.
+
 Fabric Mod Check helps Minecraft players and modpack maintainers investigate declared version conflicts before installing a pack. It covers **Minecraft Java 1.21.1 on Fabric** and four client mods: **Sodium, Iris, Indium and Continuity**.
 
 **Research question:** Which exact version constraints prevent a selected mod list from being installed together, and which changes resolve the conflicts documented in the captured records?
@@ -125,9 +127,10 @@ It dispatched zero research tasks.
 
 ## Deploy and submit
 
-1. Push the project root to GitHub. If the repository is private, add the course staff listed in the assignment.
-2. In the course GCP project, [set up Cloud Run continuous deployment from GitHub](https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build). Select the repository's main branch and the root `Dockerfile`. The image installs `uv.lock`, includes the two runtime data files and listens on Cloud Run's `PORT`.
-3. Use a runtime service account with Vertex AI access and set `GOOGLE_CLOUD_PROJECT` to the course project. Set the Cloud Run request timeout to 300 seconds. A maximum of one instance is sufficient for grading and keeps follow-up chats on the same SQLite instance until it restarts. Make the service reachable to graders per the course instructions.
-4. Open the deployed page, run all three example buttons and check their sources and tool traces. Put the verified service URL in `submission.json`'s `deploy_url`. Submit the **GitHub repository URL** in Canvas and keep the service running until grades are released.
+1. The project root is in the private repository [`yt2979/fabric-mod-check`](https://github.com/yt2979/fabric-mod-check). Invitations have been sent to the four grading accounts listed in the assignment; the recipients must accept them to access the private source.
+2. In `ieor-4570-f26-yt2979`, the global Cloud Build trigger `fabric-mod-check-main` watches pushes to `^main$` and runs the root [`cloudbuild.yaml`](cloudbuild.yaml). It builds the root `Dockerfile`, pushes the image and deploys `fabric-mod-check` in `us-central1`. The image installs `uv.lock`, ships the runtime data and listens on Cloud Run's `PORT`.
+3. The runtime uses the course project's existing service account with Vertex AI access and `GOOGLE_CLOUD_PROJECT` set. The request timeout is 300 seconds; the agent deadline is 220 seconds. A maximum of one instance keeps follow-up chats on the same SQLite instance until it restarts.
+4. Follow the [course deployment guide's school-access requirement](https://docs.google.com/document/d/1GZHWyRmOGXGJqsiIPMypKUZFRVTReCDJgC_8AdekaXk/edit): enable IAP for this service, grant `domain:columbia.edu` the IAP-secured Web App User role on this service, and grant the Google IAP service agent Cloud Run Invoker on this service. `cloudbuild.yaml` keeps IAP enabled and unauthenticated invocation disabled on subsequent deploys.
+5. Open the deployed page with a Columbia Google account, run all three example buttons and check their sources and tool traces. `submission.json` contains this service's URL. Submit the **GitHub repository URL** in Canvas and keep the service running until grades are released.
 
-The supplied `submission.json` already has the solo author's UNI and `research` path. Its deployment URL is the verified public Cloud Run service.
+The supplied `submission.json` has the solo author's UNI, `research` path and the Cloud Run URL; it contains no credentials.
