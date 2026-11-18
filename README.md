@@ -42,6 +42,26 @@ The solver evaluates declared constraints for one release of each selected mod. 
 
 The chat response contains attributed `tool_calls` for the Researchers, plus Lead dispatch and gap review entries. The first-round dispatch intervals show whether the Researchers overlapped. There are at most two research rounds. A chat request has a 220-second deadline.
 
+### Research tools
+
+Each Researcher receives one evidence-collection tool. Its underlying operations are recorded individually in `tool_calls`, with the Researcher's `agent` name.
+
+| Agent tool | What it does |
+| --- | --- |
+| `collect_versions` | Reads selected releases and their exact required pins, or lists captured releases for a named mod. |
+| `collect_dependencies` | Checks the selected pack; in the second round, finds recorded alternatives while preserving the user's locked mods. |
+| `collect_notes` | Retrieves the relevant maintainer compatibility notices and their source IDs. |
+
+| Recorded operation | What it does |
+| --- | --- |
+| `list_versions` | Lists the captured version IDs and release labels for one supported mod. |
+| `read_version` | Reads one exact version's loader, Minecraft releases and declared dependencies. |
+| `check_pack` | Detects contradictory pins, missing requirements, external dependencies and documented incompatibilities. |
+| `find_alternatives` | Enumerates candidate packs and ranks them by the number of changes within this snapshot. |
+| `read_notes` | Returns attributed maintainer notes for one supported mod. |
+
+`dispatch_research` and `review_evidence` are Lead orchestration trace events, rather than additional data-retrieval tools.
+
 ## Verify and reproduce
 
 ```sh
